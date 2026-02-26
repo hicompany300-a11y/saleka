@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skull Attack | Saleka Dev</title>
+<link rel="icon" href="../favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<meta name="description" content="Skull Attack - Fast-paced arcade combat game by Saleka Dev.">
+
+<style>
+:root{--bg:#e8ded3;--black:#111;--accent:#f39c12;--light:#555;}
+body{margin:0;background:var(--bg);font-family:Montserrat;color:var(--black);}
+header{padding:20px 8%;display:flex;justify-content:space-between;}
+header a{text-decoration:none;color:var(--black);font-weight:600;}
+header a:hover{color:var(--accent);}
+.container{padding:60px 8%;max-width:1000px;}
+h1{font-size:40px;margin-bottom:20px;}
+img{width:150px;margin:20px 0;}
+p{color:var(--light);line-height:1.7;max-width:800px;}
+.btn{display:inline-block;margin:15px 10px 0 0;padding:12px 28px;background:var(--black);color:#fff;text-decoration:none;font-weight:600;}
+.btn:hover{background:var(--accent);}
+video{width:100%;max-width:750px;margin-top:25px;border-radius:8px;}
+footer{text-align:center;padding:40px;color:var(--light);}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../index.html">← Back</a>
+</header>
+
+<div class="container">
+
+<h1>Skull Attack</h1>
+
+<img src="../icons/skull-attack.png" alt="Skull Attack Icon">
+
+<p>
+Skull Attack is a fast-paced arcade combat experience featuring enemy waves,
+precision timing mechanics, and progressive difficulty scaling. Designed for responsive gameplay and optimized Android performance.
+</p>
+
+<video id="gameVideo" controls style="display:none;">
+  <source src="../videos/skull-attack.mp4" type="video/mp4">
+</video>
+
+<br>
+
+<a class="btn" target="_blank"
+href="https://play.google.com/store/apps/dev?id=8104048815973469859">
+Try on Play Store
+</a>
+
+<a class="btn" target="_blank"
+href="https://youtube.com/@Salekadev">
+Watch on YouTube
+</a>
+
+<a class="btn" href="../privacy/skull-attack.html">
+Privacy Policy
+</a>
+
+</div>
+
+<footer>
+© 2026 Saleka Dev
+</footer>
+
+<script>
+const video = document.getElementById("gameVideo");
+video.onloadeddata = function(){
+  video.style.display = "block";
+};
+</script>
+
+</body>
+</html>

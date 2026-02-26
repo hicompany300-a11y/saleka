@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saleka Dev | Game & App Developers</title>
+<link rel="icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#e8ded3;
+--black:#111;
+--accent:#f39c12;
+--light:#555;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat;}
+body{background:var(--bg);color:var(--black);}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo img{width:45px;}
+nav a{margin-left:25px;text-decoration:none;color:var(--black);font-weight:600;}
+nav a:hover{color:var(--accent);}
+.hero{padding:90px 8%;text-align:center;}
+.hero h1{font-size:48px;font-weight:800;}
+.hero span{color:var(--accent);}
+.hero p{margin:20px auto;max-width:600px;color:var(--light);}
+.btn{padding:12px 28px;background:var(--black);color:#fff;text-decoration:none;font-weight:600;display:inline-block;margin-top:15px;}
+.btn:hover{background:var(--accent);}
+.games{padding:60px 8%;}
+.games h2{text-align:center;font-size:36px;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;}
+.card{background:#fff;padding:25px;border-radius:6px;text-align:center;}
+.card img{width:100px;margin-bottom:15px;}
+.card a{display:inline-block;margin-top:10px;color:var(--accent);font-weight:600;text-decoration:none;}
+footer{text-align:center;padding:40px;color:var(--light);}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png">
+<h3>SALEKA DEV</h3>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="#games">Games</a>
+<a href="contact.html">Contact</a>
+<a href="https://play.google.com/store/apps/dev?id=8104048815973469859" target="_blank">Play Store</a>
+<a href="https://youtube.com/@Salekadev" target="_blank">YouTube</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Build. Publish. <span>Scale.</span></h1>
+<p>Saleka Dev is a mobile game development and publishing platform delivering high-performance Android games to the Play Store.</p>
+<a class="btn" href="#games">Explore Games</a>
+</section>
+
+<section class="games" id="games">
+<h2>Our Games</h2>
+<div class="grid">
+
+<div class="card">
+<img src="icons/ball-sort.png">
+<h3>Ball Sort Master</h3>
+<a href="games/ball-sort-master.html">View Game →</a>
+</div>
+
+<div class="card">
+<img src="icons/robo-rampage.png">
+<h3>Robo Rampage</h3>
+<a href="games/robo-rampage.html">View Game →</a>
+</div>
+
+<div class="card">
+<img src="icons/skull-attack.png">
+<h3>Skull Attack</h3>
+<a href="games/skull-attack.html">View Game →</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Saleka Dev. All Rights Reserved.
+</footer>
+
+</body>
+</html>
